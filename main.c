@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
+#include <conio.h>
  void login()//login for admin access
 {
 	int a=0,i=0;
@@ -18,7 +18,7 @@
 	printf(" \n\n                  ENTER PASSWORD:-");
 	while(i<10)
 	{
-	    pword[i]=getch();//hold the screen while the pw is being typed
+	    pword[i]=getchar();//hold the screen while the pw is being typed
 	    c=pword[i];
 	    if(c==13) break;
 	    else printf("*");
